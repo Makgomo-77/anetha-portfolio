@@ -143,3 +143,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+    // Initialize carousel with custom settings
+            const myCarousel = document.querySelector('#projectCarousel');
+            const carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 5000,
+                wrap: true,
+                touch: true
+            });
+        });
