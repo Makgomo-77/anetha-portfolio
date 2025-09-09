@@ -69,92 +69,218 @@
     <section id="project-preview" class="preview-section">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold section-title">Project Preview</h2>
-            <p class="text-center mb-5 lead">Browse through my recent work. Click on any project to view details.</p>
+            <p class="text-center mb-5 lead">Browse through my recent work. Swipe or use arrows to navigate.</p>
             
-            <div class="row g-4">
-                <!-- Restaurant Website -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="preview-container" data-bs-toggle="modal" data-bs-target="#projectModal1">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Restaurant Website" class="preview-img">
-                        <div class="preview-overlay">
-                            <h4>Gourmet Haven Restaurant</h4>
-                            <p>React • Node.js • MongoDB</p>
-                            <button class="preview-btn">View Project</button>
+            <!-- Bootstrap Carousel -->
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Project 1 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                             class="card-img-top preview-card-img" alt="Restaurant Website">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">Gourmet Haven Restaurant</h5>
+                                            <p class="card-text">A modern restaurant website with online booking, menu display, and gallery features.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">React</span>
+                                                <span class="badge tech-badge me-1">Node.js</span>
+                                                <span class="badge tech-badge">MongoDB</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 2 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                             class="card-img-top preview-card-img" alt="Law Firm Website">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">Justice Partners Law Firm</h5>
+                                            <p class="card-text">Professional website for a law firm with case studies, attorney profiles, and contact forms.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">React</span>
+                                                <span class="badge tech-badge me-1">Firebase</span>
+                                                <span class="badge tech-badge">Tailwind CSS</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 3 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                             class="card-img-top preview-card-img" alt="School Website">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">Bright Future Academy</h5>
+                                            <p class="card-text">Educational institution website with course catalog, events calendar, and student portal.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">React</span>
+                                                <span class="badge tech-badge me-1">Express</span>
+                                                <span class="badge tech-badge">MySQL</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Project 4 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                             class="card-img-top preview-card-img" alt="Lodge Website">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">Mountain View Lodge</h5>
+                                            <p class="card-text">Booking website for a luxury lodge with room availability checker and online reservations.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">React</span>
+                                                <span class="badge tech-badge me-1">Stripe API</span>
+                                                <span class="badge tech-badge">Google Maps</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 5 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                                             class="card-img-top preview-card-img" alt="Personal Portfolio">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">Personal Portfolio</h5>
+                                            <p class="card-text">My own portfolio website showcasing my skills, projects, and professional journey.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">React</span>
+                                                <span class="badge tech-badge me-1">Bootstrap</span>
+                                                <span class="badge tech-badge">EmailJS</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 6 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                             class="card-img-top preview-card-img" alt="Airbnb Clone">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">Airbnb Clone</h5>
+                                            <p class="card-text">Full-stack vacation rental platform with property listings, booking system, and user reviews.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">Django</span>
+                                                <span class="badge tech-badge me-1">REST API</span>
+                                                <span class="badge tech-badge">PostgreSQL</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Project 7 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                             class="card-img-top preview-card-img" alt="E-Commerce Platform">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">ShopEasy E-Commerce</h5>
+                                            <p class="card-text">Full-featured online store with shopping cart, payment processing, and admin dashboard.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">React</span>
+                                                <span class="badge tech-badge me-1">Node.js</span>
+                                                <span class="badge tech-badge">MongoDB</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 8 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                             class="card-img-top preview-card-img" alt="Healthcare App">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">MediCare Health App</h5>
+                                            <p class="card-text">Mobile healthcare application with appointment booking, medication reminders, and telemedicine.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">React Native</span>
+                                                <span class="badge tech-badge me-1">Firebase</span>
+                                                <span class="badge tech-badge">Redux</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 9 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card preview-card">
+                                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80" 
+                                             class="card-img-top preview-card-img" alt="Financial Dashboard">
+                                        <div class="card-body preview-card-body">
+                                            <h5 class="card-title">WealthTrack Dashboard</h5>
+                                            <p class="card-text">Interactive financial dashboard with real-time analytics, investment tracking, and portfolio management.</p>
+                                            <div class="mb-3">
+                                                <span class="badge tech-badge me-1">Vue.js</span>
+                                                <span class="badge tech-badge me-1">Laravel</span>
+                                                <span class="badge tech-badge">Chart.js</span>
+                                            </div>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Law Firm Website -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="preview-container" data-bs-toggle="modal" data-bs-target="#projectModal2">
-                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Law Firm Website" class="preview-img">
-                        <div class="preview-overlay">
-                            <h4>Justice Partners Law Firm</h4>
-                            <p>React • Firebase • Tailwind CSS</p>
-                            <button class="preview-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- School Website -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="preview-container" data-bs-toggle="modal" data-bs-target="#projectModal3">
-                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="School Website" class="preview-img">
-                        <div class="preview-overlay">
-                            <h4>Bright Future Academy</h4>
-                            <p>React • Express • MySQL</p>
-                            <button class="preview-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lodge Website -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="preview-container" data-bs-toggle="modal" data-bs-target="#projectModal4">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Lodge Website" class="preview-img">
-                        <div class="preview-overlay">
-                            <h4>Mountain View Lodge</h4>
-                            <p>React • Stripe API • Google Maps</p>
-                            <button class="preview-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Personal Portfolio -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="preview-container" data-bs-toggle="modal" data-bs-target="#projectModal5">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
-                             alt="Personal Portfolio" class="preview-img">
-                        <div class="preview-overlay">
-                            <h4>Personal Portfolio</h4>
-                            <p>React • Bootstrap • EmailJS</p>
-                            <button class="preview-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Airbnb Clone -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="preview-container" data-bs-toggle="modal" data-bs-target="#projectModal6">
-                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Airbnb Clone" class="preview-img">
-                        <div class="preview-overlay">
-                            <h4>Airbnb Clone</h4>
-                            <p>Django • REST API • PostgreSQL</p>
-                            <button class="preview-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
 
 
-    <!-- About Section -->
+  <!-- About Section -->
     <section id="about" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
